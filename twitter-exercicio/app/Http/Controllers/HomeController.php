@@ -24,12 +24,6 @@ class HomeController extends Controller
         return view('change-password');
     }
 
-    //functuion that returns a view with a form to change the old password
-    public function notifications()
-    {
-        return view('notification-page');
-    }
-
     //function that updates the password on the database
     public function updatePassword(Request $request)
     {
@@ -52,4 +46,10 @@ class HomeController extends Controller
 
         return back()->with("status", "Password changed successfully!");
     }   
+
+    //functuion that returns a view with a form to change the old password
+    public function notifications()
+    {
+        return view('notification-page');
+    }
 }
