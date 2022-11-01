@@ -18,15 +18,16 @@ class HomeController extends Controller
         $this->middleware('auth');
     }
 
-    public function index()
-    {
-        return view('home');
-    }
-
     //functuion that returns a view with a form to change the old password
     public function changePassword()
     {
         return view('change-password');
+    }
+
+    //functuion that returns a view with a form to change the old password
+    public function notifications()
+    {
+        return view('notification-page');
     }
 
     //function that updates the password on the database

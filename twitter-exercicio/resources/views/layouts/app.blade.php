@@ -58,6 +58,9 @@
 
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('notifications') }}">
+                                        {{ __('Notifications') }}
+                                    </a>
                                     <a class="dropdown-item" href="{{ route('change-password') }}">
                                         {{ __('Change Password') }}
                                     </a>    
